@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<banks >
+    <bank bank_name ="PriorBank">
+
+        <depositors>
+            <depositor>
+                <name>Ivanov Ivan</name>
+                <accounts>
+                    <account country="Germany" type="demand deposit" amount_on_deposit="1000$" profitability="2%"
+                             time_constrains="2 years" account_id="a123"/>
+                    <account country="Russia" type="the deposit is urgent" amount_on_deposit="100$" profitability="3%"
+                             time_constrains="2 years" account_id="a1234"/>
+                </accounts>
+             </depositor>
+
+            <depositor>
+                <name>Sokolov Den</name>
+                <accounts>
+                    <account country="Russia" type="settlement contribution" amount_on_deposit="5000$" profitability="2%"
+                             time_constrains="2 years" account_id="a1235"/>
+
+                </accounts>
+            </depositor>
+
+            <depositor>
+                <name>Petrov Petr</name>
+                <accounts>
+                    <account country="Ukraine" type="savings deposit" amount_on_deposit="2000$" profitability="1,5%"
+                             time_constrains="5 years" account_id="a1237"/>
+                    <account country="Russia" type="metal deposit" amount_on_deposit="100$" profitability="3%"
+                             time_constrains="2 years" account_id="a12347"/>
+                </accounts>
+            </depositor>
+        </depositors>
+    </bank>
+
+    <bank bank_name="AlfaBank">
+        <depositors>
+            <depositor>
+                <name>Ivanov Ivan</name>
+                <accounts>
+                    <account country="Belarus" type="savings deposit" amount_on_deposit="10000$" profitability="2.5%"
+                             time_constrains="5 years" account_id="b123"/>
+
+                </accounts>
+            </depositor>
+
+            <depositor>
+                <name>Galkin Maks</name>
+                <accounts>
+                    <account country="Russia" type="settlement contribution" amount_on_deposit="5000$" profitability="2%"
+                             time_constrains="2 years" account_id="b1235"/>
+
+                </accounts>
+            </depositor>
+
+            <depositor>
+                <name>Vovk Anna</name>
+                <accounts>
+                    <account country="Russia" type="settlement contribution" amount_on_deposit="2500$" profitability="1,5%"
+                             time_constrains="5 years" account_id="b1237"/>
+                    <account country="Belarus" type="metal deposit" amount_on_deposit="100$" profitability="3%"
+                             time_constrains="2 years" account_id="b12347"/>
+                </accounts>
+            </depositor>
+        </depositors>
+    </bank>
+
+
+    <bank bank_name="HSBC">
+        <depositors>
+            <depositor>
+                <name>Smith John</name>
+                <accounts>
+                    <account country="England" type="cumulative contribution" amount_on_deposit="10000$" profitability="2.5%"
+                             time_constrains="5 years" account_id="c123"/>
+
+                </accounts>
+            </depositor>
+
+            <depositor>
+                <name>Muller Hans</name>
+                <accounts>
+                    <account country="Germany" type="settlement contribution" amount_on_deposit="5000$" profitability="2%"
+                             time_constrains="2 years" account_id="c1235"/>
+
+                </accounts>
+            </depositor>
+
+            <depositor>
+                <name>Novak Ian</name>
+                <accounts>
+                    <account country="Poland" type="the deposit is urgent" amount_on_deposit="2500$" profitability="1,5%"
+                             time_constrains="5 years" account_id="c1237"/>
+                    <account country="Belarus" type="metal deposit" amount_on_deposit="100$" profitability="3%"
+                             time_constrains="2 years" account_id="c12347"/>
+                </accounts>
+            </depositor>
+        </depositors>
+    </bank>
+
+</banks>
