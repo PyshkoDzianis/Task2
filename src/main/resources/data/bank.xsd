@@ -1,0 +1,39 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="banks" type="banks"/>
+    <xs:complexType name="account">
+        <xs:sequence/>
+        <xs:attribute name="country" type="xs:string"/>
+        <xs:attribute name="type" type="xs:string"/>
+        <xs:attribute name="amount_on_deposit" type="xs:string"/>
+        <xs:attribute name="profitability" type="xs:string"/>
+        <xs:attribute name="time_constrains" type="xs:string"/>
+        <xs:attribute name="account_id" type="xs:string"/>
+    </xs:complexType>
+    <xs:complexType name="accounts">
+        <xs:sequence>
+            <xs:element name="account" type="account" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="depositor">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="accounts" type="accounts"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="depositors">
+        <xs:sequence>
+            <xs:element name="depositor" type="depositor" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="bank">
+        <xs:sequence>
+            <xs:element name="depositors" type="depositors"/>
+        </xs:sequence>
+        <xs:attribute name="bank_name" type="xs:string"/>
+    </xs:complexType>
+    <xs:complexType name="banks">
+        <xs:sequence>
+            <xs:element name="bank" type="bank" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
