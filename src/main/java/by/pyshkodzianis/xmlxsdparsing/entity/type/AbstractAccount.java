@@ -8,6 +8,8 @@ import javax.xml.bind.annotation.XmlRootElement;
    @XmlAccessorType(XmlAccessType.FIELD)
 
 public abstract class AbstractAccount {
+
+
     private String account_id;
     private String account_depositor;
     private String account_profitability;
@@ -77,6 +79,15 @@ public abstract class AbstractAccount {
         this.accountType = accountType;
     }
 
-
-
-}
+       @Override
+       public String toString() {
+           return "AbstractAccount{" +
+                   "account_id='" + account_id + '\'' +
+                   ", account_depositor='" + account_depositor + '\'' +
+                   ", account_profitability='" + account_profitability + '\'' +
+                   ", account_time_constrains='" + account_time_constrains + '\'' +
+                   ", account_country='" + account_country + '\'' +
+                   ", accountType=" + accountType +
+                   '}';
+       }
+   }
